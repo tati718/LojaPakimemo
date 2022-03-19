@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Compras</title>
+
+  <style>
+    body {
+      background: #116688;
+      color: #eeee22;
+      font-family: Lora, Georgia, serif;
+      font-size: 16px;
+    }
+
+    header {
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    nav {
+      display: block;
+      width: 18%;
+      float: left;
+      margin-right: 10px;
+      font-family: Rubik, Verdana, sans-serif;
+    }
+
+    ul {
+      color: #ffdd22;
+      line-height: 230%;
+      margin-top: 40px;
+      /*margem superior*/
+      list-style-type: square;
+    }
+
+    section {
+      display: block;
+      width: 70%;
+      float: right;
+    }
+
+    /**li {
+  font-size: small;
+  padding: 5px;
+  margin: 5px;
+}**/
+    a:link {
+      color: #ffff22;
+      text-decoration: none;
+      /** Acrescenta essa tag para retirar o sublinhado do link**/
+    }
+
+    a:visited {
+      color: #dddd22;
+      text-decoration: none;
+    }
+
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .imgTopo {
+      border-bottom: 3px solid;
+      margin-bottom: 4px;
+      padding-bottom: 5px;
+    }
+
+    .ender {
+      display: block;
+      font-size: 14px;
+      line-height: 140%;
+      float: right;
+      text-align: right;
+      width: auto;
+      height: auto;
+    }
+
+    /**.apres {
+  font-size: 18px;
+  text-align: center;
+}
+/**Página Compras Customizada, estilizando formulário de Compras**/
+
+    /*classes*/
+    .FormBox {
+      width: 520px;
+      background-color: #33bbbb;
+      padding: 10px;
+      margin-top: 10px;
+      border: 3px solid #eeee22;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .FSLinhaInteira {
+      display: block;
+      color: white;
+      width: 490px;
+      text-align: left;
+    }
+
+    .botoes {
+      text-align: right;
+      margin: 20px 10px 0px 10px;
+      border-radius: 4px;
+    }
+
+    .numCartao {
+      width: 50px;
+      border-radius: 4px;
+    }
+
+
+    span {
+      color: white;
+      font-style: italic;
+    }
+
+    .aqui {
+      color: #eeee22;
+    }
+
+    .tituloProduto {
+      font-weight: bold;
+    }
+
+    /*ids*/
+    #loginCad {
+      width: 260px;
+      border-radius: 4px;
+    }
+
+    #Email {
+      width: 160px;
+      border-radius: 4px;
+    }
+
+    #senhaCad {
+      width: 80px;
+      /*display: block;*/
+      border-radius: 4px;
+    }
+
+    #valor {
+
+      text-align: right;
+      border-radius: 4px;
+    }
+
+    #lisSelProd {
+      width: 370px;
+      border-radius: 4px;
+    }
+
+    #lisPedArea {
+      width: 100%;
+      height: 100px;
+      border-radius: 4px;
+    }
+
+    #boxPedidos {
+      width: 30px;
+      height: 100px;
+      padding: 6px 3px 0px 3px;
+      margin: 0px;
+      border-radius: 4px;
+    }
+
+    #btnIncluir {
+      display: block;
+      width: 70px;
+      float: right;
+      border-radius: 4px;
+    }
+
+
+    #validCartao {
+      width: 50px;
+      border-radius: 4px;
+    }
+
+
+    #parcel {
+      width: 50px;
+      border-radius: 4px;
+    }
+
+    #FSbandeira {
+      display: block;
+      color: white;
+      width: 80px;
+      height: 80px;
+      text-align: left;
+      float: right;
+    }
+
+    #a {
+      color: white;
+    }
+
+    select {
+      background: #EEE;
+      pointer-events: none;
+      touch-action: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <address class="ender">
+      Rua do Passo do Elefantinho, 123<br />
+      Tel: (21)4321-5678 <br />
+      <a href="mailto:contato@paquiderme.com.br">
+        contato@paquiderme.com.br
+      </a>
+    </address>
+    <p>
+      <img class="imgTopo" src="Imagens/PakiLogoTopo.png" />
+    </p>
+
+    <br />
+    <nav>
+      <ul>
+        <li><a href="PakiMemo.html">INICIAL</a></li>
+        <li><a href="Memorias.html">MEMÓRIAS</a></li>
+        <li><a href="Discos.html">HDs/SSDs</a></li>
+        <li><a href="Cadastro.html">CADASTRO</a></li>
+        <li><a href="Compras.html">COMPRAS</a></li>
+    </nav>
+    </ul>
+
+    <section>
+
+      <form action="" method="post" enctype="application/x-www-form-urlencoded" target="" class="FormBox">
+        <p>Compras </p>
+        <fieldset class="FSLinhaInteira">
+          <legend>Identificação</legend>
+
+          <p>
+            <label id="loginCad" for="email"> E-mail:</label>
+            <input id="Email" type="text" name="email" id="email" size="20" maxlength="40">
+
+            <label for="senha"> Senha:</label>
+            <input id="senhaCad" type="password" name="senha" id="senha" size="8"> <br />
+          </p>
+
+
+          <p>
+            <a href="Cadastro.html"><span>Se você ainda não tem cadastro clique </span>
+              <span class="aqui">aqui! </span></a>
+          </p>
+
+
+        </fieldset>
+
+        <fieldset class="FSLinhaInteira">
+          <legend> Lista de Compras</legend>
+
+          <p id="lisSelProd">
+            <label id="boxPedidos" for="produtos"> Produtos:</label>
+            <select tabindex="-1" aria-disabled="true">
+              <option value="">.....</option>
+              <option class="tituloProduto" value="Memoria DDR3">Memória DDR3</option>
+              <option value="Kingston 4Gb">Kingston 4Gb</option>
+              <option value="Samsung 8Gb">Samsung 8Gb</option>
+              <option class="tituloProduto" value="Memoria DDR4">Memória DDR4</option>
+              <option value="Kingston Fury 8Gb">Kingston Fury 8Gb</option>
+              <option value="Corsair Vengeance 8GB">Corsair Vengeance 8Gb</option>
+              <option class="tituloProduto" value="HD Sata III">HD Sata III</option>
+              <option value="Western Digital 500Gb">Western Digital 500b</option>
+              <option value="Seagate 1Tb">Seagate 1Tb</option>
+              <option class="tituloProduto" value="SSD Sata III">SSD Sata III</option>
+              <option value="Samdisk 480Gb">Samdisk 480Gb</option>
+              <option value="Kingston 960Gb">Kingston 960Gb</option>
+              <option class="tituloProduto" value="SSD M2">SSD M2</option>
+              <option value="Kingston 500Gb">Kingston 500Gb</option>
+              <option value="Western Digital 240 Gb">Western Digital 240 Gb</option>
+            </select>
+
+
+            <button id="btnIncluir" type="submit"> Incluir </button>
+
+          </p>
+
+          <p>
+            <label for="detalhesProdutos"></label>
+            <textarea id="lisPedArea" name="text"></textarea>
+          </p>
+          <p id="valor">
+            <label for="valor"> Valor: R$</label>
+            <input type="text" name="valor" id="valor" size="8" readonly>
+          </p>
+
+
+        </fieldset>
+        <fieldset class="FSLinhaInteira ">
+          <fieldset id="FSbandeira">
+            <legend>Bandeira:</legend>
+            <p>
+
+              <label>
+                <input class="radio" type="radio" name="bandeira" id="visa" checked> Visa <br />
+              </label>
+
+              <label>
+                <input class="radio" type="radio" name="bandeira" id="master"> Master <br />
+              </label>
+
+              <label>
+                <input class="radio" type="radio" name="bandeira" id="outro"> Elo <br />
+              </label>
+            </p>
+          </fieldset>
+
+
+
+          <legend> Dados do Cartão </legend>
+          <p>
+
+            <label for="numeroCartao"> Número: </label>
+            <input class="numCartao" type="text" size="4" />
+            <input class="numCartao" type="text" size="4" />
+            <input class="numCartao" type="text" size="4" />
+            <input class="numCartao" type="text" size="4" /> <br />
+          </p>
+
+          <p>
+            <label for="validade"> Validade : </label>
+            <input id="validCartao" type="number" name="mes" min="01" max="12" /> /
+            <input id="validCartao" type="number" name="ano" aria-selected="" value="2022" /> <br />
+          </p>
+
+          <p>
+            <label for="parcelas"> Parcelas : </label>
+            <input id="parcel" type="number" name="parcelas" aria-selected="1" max="12" /> x Sem Juros
+          </p>
+
+
+        </fieldset>
+        <div class="botoes">
+          <button class="botoes" type="submit">Cadastrar </button>
+          <input class="botoes" type="reset" name="limpar" id="limpar" value="Limpar"> <br />
+        </div>
+
+      </form>
+    </section>
+  </header>
+</body>
+
+</html>

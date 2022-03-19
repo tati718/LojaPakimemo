@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadastro</title>
+  <style>
+    body {
+      background: #116688;
+      color: #eeee22;
+      /**font-family: Georgia, serif; **/
+      /**nova alteração seguindo a questão 2ª da AD1**/
+      font-family: Lora, Georgia, serif;
+      font-size: 16px;
+    }
+
+    header {
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    nav {
+      display: block;
+      width: 18%;
+      float: left;
+      margin-right: 10px;
+      font-family: Rubik, Verdana, sans-serif;
+    }
+
+    ul {
+      color: #ffdd22;
+      line-height: 230%;
+      margin-top: 40px;
+      /*margem superior*/
+      list-style-type: square;
+    }
+
+    section {
+      display: block;
+      width: 70%;
+      float: right;
+    }
+
+    a:link {
+      color: #ffff22;
+      text-decoration: none;
+      /** Acrescenta essa tag para retirar o sublinhado do link**/
+    }
+
+    a:visited {
+      color: #dddd22;
+      text-decoration: none;
+    }
+
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .imgTopo {
+      border-bottom: 3px solid;
+      margin-bottom: 4px;
+      padding-bottom: 5px;
+    }
+
+    .ender {
+      display: block;
+      font-size: 14px;
+      line-height: 140%;
+      float: right;
+      text-align: right;
+      width: auto;
+      height: auto;
+    }
+
+    /**.apres {
+  font-size: 18px;
+  text-align: center;
+}
+/**Página Cadastro Customizada, estilizando formulários**/
+    .FormBox {
+      width: 520px;
+      background-color: #33bbbb;
+      padding: 10px;
+      margin-top: 10px;
+      border: 3px solid #eeee22;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .FSLinhaInteira {
+      color: white;
+      width: 490px;
+      text-align: left;
+    }
+
+    .FSColEsq {
+      width: 210px;
+      height: 60px;
+      text-align: center;
+      float: left;
+    }
+
+    .FSColDir {
+      width: 210px;
+      height: 60px;
+      text-align: center;
+      float: left;
+    }
+
+    .LinhaForm {
+      width: 30px;
+      padding: 6px 3px 0px 3px;
+      margin: 0px;
+      border-radius: 4px;
+    }
+
+    .LabForm {
+      display: block;
+      width: 80px;
+      float: left;
+      border-radius: 4px;
+    }
+
+    .InpBoxGnd {
+      display: block;
+      width: 384px;
+      border-radius: 4px;
+    }
+
+    .InpBoxMed {
+      border-radius: 4px;
+    }
+
+    .InpDia {
+      width: 40px;
+      height: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .InpMes {
+      width: 40px;
+      height: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .InpAno {
+      width: 50px;
+      height: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .numDD {
+      width: 35px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .numQD {
+      width: 50px;
+      border-radius: 4px;
+    }
+
+    .botoes {
+      text-align: right;
+      margin: 20px 10px 0px 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <address class="ender">
+      Rua do Passo do Elefantinho, 123<br />
+      Tel: (21)4321-5678 <br />
+      <a href="mailto:contato@paquiderme.com.br">
+        contato@paquiderme.com.br
+      </a>
+    </address>
+    <p>
+      <img class="imgTopo" src="Imagens/PakiLogoTopo.png" />
+    </p>
+
+    <br />
+    <nav>
+      <ul>
+        <li><a href="PakiMemo.html">INICIAL</a></li>
+        <li><a href="Memorias.html">MEMÓRIAS</a></li>
+        <li><a href="Discos.html">HDs/SSDs</a></li>
+        <li><a href="Cadastro.html">CADASTRO</a></li>
+        <li><a href="Compras.html">COMPRAS</a></li>
+    </nav>
+    </ul>
+
+    <section>
+      <form action="" method="post" enctype="application/x-www-form-urlencoded" target="" class="FormBox">
+        <p>Cadastro</p>
+        <fieldset class="FSLinhaInteira">
+          <legend>Identificação</legend>
+
+          <p>
+            <label class="LabForm" for="email"> E-mail:</label>
+            <input class="InpBoxGnd" type="text" name="email" id="email" size="40"> <br />
+          </p>
+
+          <p>
+            <label class="LabForm" for="senha"> Senha:</label>
+            <input class="InpBoxMed" type="password" name="senha" id="senha" size="8">
+            <label class="LinhaForm"> Confirme:</label>
+            <input class="InpBoxMed" type="password" name="confirme" id="confirmesenha" size="8">
+
+
+
+
+        </fieldset>
+
+        <fieldset class="FSLinhaInteira">
+          <legend> Dados Pessoais</legend>
+
+          <p>
+            <label class="LabForm" for="nome"> Nome:</label>
+            <input class="InpBoxGnd" type="text" name="nome" id="nome" size="20" maxlength="40"> <br />
+          </p>
+
+          <p>
+            <label class="LabForm" for="endereco"> Endereço:</label>
+            <textarea class="InpBoxGnd " name="text"></textarea> <br />
+          </p>
+
+          <p>
+            <label class="LinhaForm" for="telefone"> Telefone: </label>
+            <input class="numDD" type="DD" id="DD" name="tel" size="2">
+            <input class="InpBoxMed" type="tel" id="tel" name="tel" size="8">
+
+
+            <label class="LinhaForm" for="celular"> Celular: </label>
+            <input class="InpBoxMed" type="cel" id="cel" name="cel" size="9">
+
+
+
+          <fieldset class="FSColEsq">
+            <legend> Nascimento </legend>
+            <p>
+              <label for="dataNascimento"></label>
+              <!--<input class="InpDia" type="data" required name="dia" size="1" maxlength="2" id="dia">/
+              <input class="InpDia" type="data" required name="dia" size="1" maxlength="2" id="dia">/
+              <input class="InpMes" type="data" required name="mes" size="1" maxlength="2" id="mes">/
+              <input class="InpAno" type="data" required name="ano" size="1" maxlength="4" id="ano" aria-selected="" value="1980">-->
+              <label for="dataNascimento"></label>
+              <input class="InpDia" type="number" name="dia" min="01" max="31" id="dia" size="2"> /
+              <input class="InpMes" type="number" name="mes" min="01" max="12" id="mes" size="2"> /
+              <input class="InpAno" type="number" name="ano" size="01" maxlength="4" id="ano" aria-selected="" value="1980">
+            </p>
+
+
+          </fieldset>
+
+
+          <fieldset class="FSColDir">
+            <legend>Sexo</legend>
+            <p>
+              <label>
+                <input class="radio" type="radio" name="sexo" id="mas"> Mas
+              </label>
+
+              <label>
+                <input class="radio" type="radio" name="sexo" id="fem"> Fem
+              </label>
+
+              <label>
+                <input class="radio" type="radio" name="sexo" id="outro" checked> Outro
+              </label>
+
+
+          </fieldset>
+        </fieldset>
+
+        <div class="botoes">
+          <button class="botoes" type="submit">Cadastrar </button>
+          <input class="botoes" type="reset" name="limpar" id="limpar" value="Limpar"> <br />
+
+        </div>
+      </form>
+    </section>
+  </header>
+</body>
+
+</html>

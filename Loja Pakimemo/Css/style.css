@@ -1,0 +1,74 @@
+/**Página Inicial da loja Pakimemo customizada , questão 2º da AD1**/
+body {
+  background: #116688;
+  color: #eeee22;
+  /**font-family: Georgia, serif; **/
+  /**nova alteração seguindo a questão 2ª da AD1**/
+  font-family: Lora, Georgia, serif;
+  font-size: 16px;
+}
+header {
+  display: block;
+  margin-bottom: 1px;
+}
+nav {
+  display: block;
+  width: 18%;
+  float: left;
+  margin-right: 10px;
+  font-family: Rubik, Verdana, sans-serif;
+}
+
+ul {
+  color: #ffdd22;
+  line-height: 230%;
+  margin-top: 40px; /*margem superior*/
+  list-style-type: square;
+}
+
+section {
+  display: block;
+  width: 70%;
+  float: right;
+}
+
+/**li {
+  font-size: small;
+  padding: 5px;
+  margin: 5px;
+}**/
+a:link {
+  color: #ffff22;
+  text-decoration: none; /** Acrescenta essa tag para retirar o sublinhado do link**/
+}
+
+a:visited {
+  color: #dddd22;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgTopo {
+  border-bottom: 3px solid;
+  margin-bottom: 4px;
+  padding-bottom: 5px;
+}
+
+.ender {
+  display: block;
+  font-size: 14px;
+  line-height: 140%;
+  float: right;
+  text-align: right;
+  width: auto;
+  height: auto;
+}
+
+.apres {
+  font-size: 18px;
+  text-align: center;
+}
